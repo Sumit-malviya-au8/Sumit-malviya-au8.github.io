@@ -1,5 +1,4 @@
-import React, { useState, useEffect} from "react";
-
+import React, { useState, useEffect } from "react";
 
 function App() {
   let today = new Date();
@@ -31,14 +30,22 @@ function App() {
     return nextweek;
   }
 
-  var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  var d = new Date(currentdate);
-  var dayName = days[d.getDay()];
-  var dayName1 = days[d.getDay() + 1];
-  var dayName2 = days[d.getDay() + 2];
-  var dayName3 = days[d.getDay() + 3];
-  var dayName4 = days[d.getDay() + 4];
-  var dayName5 = days[d.getDay() + 5];
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let d = new Date(currentdate);
+  let dayName = days[d.getDay()];
+  let dayName1 = days[d.getDay() + 1];
+  let dayName2 = days[d.getDay() + 2];
+  let dayName3 = days[d.getDay() + 3];
+  let dayName4 = days[d.getDay() + 4];
+  let dayName5 = days[d.getDay() + 5];
 
   return (
     <div className="App">
@@ -52,7 +59,6 @@ function App() {
       <p>{dayName2}</p>
       <p>{dayName3}</p>
       <p>{dayName4}</p>
-
     </div>
   );
 }
