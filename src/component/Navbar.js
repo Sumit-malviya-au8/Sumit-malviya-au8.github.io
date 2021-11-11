@@ -50,7 +50,6 @@ function Navbar() {
             <li>
               <a
                 href="https://www.linkedin.com/in/sumit-malviya/"
-                target="_blank"
               >
                 <FaFacebookSquare className="facebook" />
               </a>
